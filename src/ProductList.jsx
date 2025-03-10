@@ -310,7 +310,7 @@ const handlePlantsClick = (e) => {
                             <img className="product-image" src={plant.image} alt={plant.name} />
                             <div className="product-price">{plant.cost}</div>
                             <div>{plant.description}</div>
-                            <button className={deshabilitar(plant)? "product-button added-to-cart":"product-button"} {deshabilitar(plant)? "disabled":""} 
+                            <button className={deshabilitar(plant)? "product-button added-to-cart":"product-button"} disabled={deshabilitar(plant)}  
                             onClick={() => handleAddToCart(plant)}>Add to Cart</button>
                         </div>
                         ))}
